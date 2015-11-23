@@ -6,6 +6,7 @@ By Irene Alvarado & Will Miao
 
 ## Concept
 Our project was inspired by the corneal imaging work done by [Ko Nishino et al.](http://www1.cs.columbia.edu/CAVE/publications/pdfs/Nishino_IJCV06.pdf), whereby typically obscured information about an environment could be revealed and magnified through geometric transformations. We were motivated by uncovering the extra environmental information hidden within distorted reflections through a medley of techniques, outlined below.
+
 ![Cornea reflection](http://i.imgur.com/tnEi0Rb.png?1)
 
 
