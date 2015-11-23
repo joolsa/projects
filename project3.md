@@ -5,14 +5,14 @@ By Irene Alvarado & Will Miao
 
 
 ## Concept
-![Cornea reflection](http://i.imgur.com/tnEi0Rb.png?1)
 Our project was inspired by the corneal imaging work done by [Ko Nishino et al.](http://www1.cs.columbia.edu/CAVE/publications/pdfs/Nishino_IJCV06.pdf), whereby typically obscured information about an environment could be revealed and magnified through geometric transformations. We were motivated by uncovering the extra environmental information hidden within distorted reflections through a medley of techniques, outlined below.
+![Cornea reflection](http://i.imgur.com/tnEi0Rb.png?1)
 
 
 ## Part 1 : Corneal reflection imaging
 We began by experimenting with photographing corneal reflections and unwarping the images using the [VisualEyes software](http://www1.cs.columbia.edu/CAVE/software/visualeyes/), also by Ko NIshino et al. The unwarped images were strikingly clear and contained a considerable amount of information about the environment where it was taken.
 
-![cornea](https://www.dropbox.com/s/fsjsw6o8m70ypzy/Screen%20Shot%202015-11-23%20at%205.53.19%20PM.png?dl=0)
+![cornea](http://s27.postimg.org/68shbukrn/Screen_Shot_2015_11_23_at_5_53_19_PM.png)
 
 ![cornea unwarped](http://i.imgur.com/aGJV6zX.png)
 
