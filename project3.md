@@ -35,6 +35,7 @@ We applied this technique on 360 degree video that we captured using the v360 ca
 
 
 ## Processing Slit-scan code
+```java
 import processing.video.*;
 Movie myMovie;
 
@@ -66,4 +67,4 @@ Movie myMovie;
       copy(myMovie, 0, myMovie.height/2, myMovie.width, 1, 0, height-(X++%height), width, 1);
     }
   }
-
+```
