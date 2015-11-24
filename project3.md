@@ -32,3 +32,38 @@ Running into this wall with iris detection, we decided to take a different appro
 We applied this technique on 360 degree video that we captured using the v360 camera. By playing with the position and width of the slit, as well as the scanning direction, we generated a variety of effects that elongate certain aspects of an image. 
 
 [![Walking to Sky slit scan](http://i.imgur.com/WtSY7iX.jpg)](https://vimeo.com/146692819 "Walking to the sky")
+
+
+## Processing Slit-scan code
+import processing.video.*;
+Movie myMovie;
+
+//  Capture myCap;
+  int X=0;
+  int i = 1;
+  void setup() {
+    
+    //myCap = new Capture(this, 320, 240);
+    //myCap.start();  
+    size(1920, 800);
+    myMovie = new Movie(this, "sky.mov");
+    myMovie.loop();
+    //myMovie.play();
+    
+  }
+ 
+  void draw() {
+    //image(myMovie,0,0);
+    if (myMovie.available()) {
+      myMovie.read();
+      myMovie.loadPixels();
+      frameRate(240);
+      
+	  //adjusting slit width, position, and scanning direction
+	  //copy(myMovie, (myMovie.width/2), 0, 1, myMovie.height, (X++%width), 0, 1, height);
+      //copy(myMovie, 0, myMovie.height/2, myMovie.width, 1, 0, (X++%height), width, 1);
+      //copy(myMovie, 0, myMovie.height/2-40, myMovie.width, 40, 0, height-(X++%height), width, 40);
+      copy(myMovie, 0, myMovie.height/2, myMovie.width, 1, 0, height-(X++%height), width, 1);
+    }
+  }
+
